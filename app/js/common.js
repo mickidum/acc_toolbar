@@ -3,8 +3,8 @@
 function MicAccessTool(init) {
 
 	this.init = init || {
-		link: 'https://atidim.co.il',
-  	contact: 'https://atidim.co.il/contact',
+		link: '',
+  	contact: '',
   	buttonPosition: 'left',
   	forceLang: '',
 	};
@@ -387,10 +387,12 @@ MicAccessTool.prototype.initialApp = function() {
 	}
 	if (this.init.link) {
 		var initLink = document.getElementById('mic-toolbox-link-nagishut') || {};
+		initLink.classList.remove('atb-hide-if-empty');
 		initLink.href = this.init.link;
 	}
 	if (this.init.contact) {
 		var initContact = document.getElementById('mic-toolbox-link-contact') || {};
+		initContact.classList.remove('atb-hide-if-empty');
 		initContact.href = this.init.contact;
 	}
 	if (this.init.buttonPosition === 'right') {
