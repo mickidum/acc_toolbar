@@ -20,9 +20,9 @@ This component allows users with disabilities easy and convenient way to browse 
 			<div class="highlight">
 				<pre class="highlight">
 					<code>
-			<script src="path/to/script/where/stored/acctoolbar.min.js"></script>
+			&lt;script src="path/to/script/where/stored/acctoolbar.min.js"&gt;&lt;/script&gt;
 			// optional
-			<script>
+			&lt;script&gt;
 				window.onload = function() {	
 				  window.micAccessTool = new MicAccessTool({
 				  	link: '[link to your accesibility statement page]',
@@ -31,28 +31,12 @@ This component allows users with disabilities easy and convenient way to browse 
 				  	forceLang: '[default english] may be he-IL'
 				  });
 				};
-			</script>
+			&lt;/script&gt;
 		</code>
 				</pre>
 			</div>
 		</div>
 		
-		<pre>
-		<code>
-			<script src="path/to/script/where/stored/acctoolbar.min.js"></script>
-			// optional
-			<script>
-				window.onload = function() {	
-				  window.micAccessTool = new MicAccessTool({
-				  	link: '[link to your accesibility statement page]',
-				  	contact: '[link to your contact page or "maitto" link]',
-				  	buttonPosition: '[default is "left"] may be "right"',
-				  	forceLang: '[default english] may be he-IL'
-				  });
-				};
-			</script>
-		</code>
-	</pre>
 	</li>
 </ol>
 
