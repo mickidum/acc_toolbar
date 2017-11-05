@@ -65,6 +65,43 @@ gulp.task('watch', ['sass', 'browser-sync', 'common-js', 'minify-html'], functio
 	gulp.watch('app/*.html', browserSync.reload);
 });
 
+gulp.task('build', ['removedist', 'sass', 'minify-html', 'common-js'], function() {
+
+	var buildFiles = gulp.src([
+		'app/js/common.min.js'
+		])
+	.pipe(rename('acctoolbar.min.js'))
+	.pipe(gulp.dest('acctoolbar'));
+
+	var buildCursors = gulp.src([
+		'app/cursors/**/*',
+		]).pipe(gulp.dest('acctoolbar/cursors'));
+
+	// var buildCss = gulp.src([
+	// 	'app/css/app.min.css',
+	// 	]).pipe(gulp.dest('dist/css'));
+
+	// var buildJs = gulp.src([
+	// 	'app/js/scripts.min.js',
+	// 	'app/js/common.min.js',
+	// 	]).pipe(gulp.dest('dist/js'));
+
+	// var buildFonts = gulp.src([
+	// 	'app/fonts/**/*',
+	// 	]).pipe(gulp.dest('dist/fonts'));
+
+	// var buildApi = gulp.src([
+	// 	'app/api/**/*',
+	// 	]).pipe(gulp.dest('dist/api'));
+
+
+});
+
+
+
+gulp.task('removedist', function() { return del.sync('acctoolbar'); });
+gulp.task('clearcache', function () { return cache.clearAll(); });
+
 
 gulp.task('clearcache', function () { return cache.clearAll(); });
 
