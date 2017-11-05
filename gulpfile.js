@@ -7,10 +7,8 @@ var gulp           = require('gulp'),
 		cleanCSS       = require('gulp-clean-css'),
 		rename         = require('gulp-rename'),
 		del            = require('del'),
-		imagemin       = require('gulp-imagemin'),
 		cache          = require('gulp-cache'),
 		autoprefixer   = require('gulp-autoprefixer'),
-		ftp            = require('vinyl-ftp'),
 		notify         = require("gulp-notify"),
 		fileinclude 	 = require('gulp-file-include'),
 		htmlmin 	 		 = require('gulp-htmlmin');
@@ -31,6 +29,7 @@ gulp.task('common-js', function() {
       prefix: '@@',
       basepath: '@file'
    }))
+	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(uglify())
 	.pipe(gulp.dest('app/js'))
 	.pipe(browserSync.reload({stream: true}));
@@ -54,16 +53,15 @@ gulp.task('sass', function() {
 		outputStyle: 'expand'}).on("error", notify.onError()))
 	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(autoprefixer(['last 15 versions']))
-	.pipe(cleanCSS()) // Опционально, закомментировать при отладке
+	.pipe(cleanCSS())
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('watch', ['sass', 'browser-sync', 'common-js', 'minify-html'], function() {
-	gulp.watch('app/scss/**/*.scss', ['sass']);
+	gulp.watch('app/scss/**/*.scss', ['sass', 'common-js']);
 	gulp.watch(['app/js/common.js'], ['common-js']);
-	gulp.watch(['app/htmlparts/**/*.html'], ['minify-html']);
-	gulp.watch(['app/js/common.js'], browserSync.reload);
+	gulp.watch(['app/htmlparts/**/*.html'], ['minify-html', 'common-js']);
 	gulp.watch('app/*.html', browserSync.reload);
 });
 

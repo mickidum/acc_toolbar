@@ -32,7 +32,7 @@
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^2.1.0",
     "gulp-util": "^3.0.8",
-    "gulp-file-include": "^1.2.0",
+    "gulp-file-include": "^1.2.0"
   },
   "bugs": {
     "url": "https://github.com/mickidum/acc_toolbar/issues"
