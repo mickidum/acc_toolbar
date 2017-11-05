@@ -3,15 +3,11 @@
 <p>
 	<img src="https://raw.githubusercontent.com/agragregra/optimizedhtml-start-template/master/app/img/preview.jpg" alt="Start HTML Template">
 </p>
-
 <p>Author: <a href="http://webworks.ga">mickidum</a></p>
-
-<p>Accessibility Toolbar Plugin is simple toolbar</p>
 <p>
 Accessibility Toolbar Plugin is simple accessibility component, including a variety of tools.
 This component allows users with disabilities easy and convenient way to browse most websites.
 </p>
-
 
 <h2>How to use Accessibility Toolbar</h2>
 
@@ -20,6 +16,27 @@ This component allows users with disabilities easy and convenient way to browse 
 	<li>Store this file in your website directory (i.e. /public_html)</li>
 	<li>
 		<p>Add script to website</p>
+		<div class="language-js highlighter-rouge">
+			<div class="highlight">
+				<pre class="highlight">
+					<code>
+			<script src="path/to/script/where/stored/acctoolbar.min.js"></script>
+			// optional
+			<script>
+				window.onload = function() {	
+				  window.micAccessTool = new MicAccessTool({
+				  	link: '[link to your accesibility statement page]',
+				  	contact: '[link to your contact page or "maitto" link]',
+				  	buttonPosition: '[default is "left"] may be "right"',
+				  	forceLang: '[default english] may be he-IL'
+				  });
+				};
+			</script>
+		</code>
+				</pre>
+			</div>
+		</div>
+		
 		<pre>
 		<code>
 			<script src="path/to/script/where/stored/acctoolbar.min.js"></script>
