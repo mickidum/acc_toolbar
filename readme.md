@@ -21,16 +21,17 @@ This component allows users with disabilities easy and convenient way to browse 
 				<pre class="highlight">
 					<code>
 &lt;script src="path/to/script/where/stored/acctoolbar.min.js"&gt;&lt;/script&gt;
-// optional
+
+// optional init
 &lt;script&gt;
-window.onload = function() {	
-window.micAccessTool = new MicAccessTool({
-link: '[link to your accesibility statement page]',
-contact: '[link to your contact page or "maitto" link]',
-buttonPosition: '[default is "left"] may be "right"',
-forceLang: '[default english] may be he-IL'
-});
-};
+	window.onload = function() {	
+		window.micAccessTool = new MicAccessTool({
+			link: '[link to your accesibility statement page]',
+			contact: '[link to your contact page or "maitto" link]',
+			buttonPosition: '[default is "left"] may be "right"',
+			forceLang: '[default english] may be he-IL'
+		});
+	};
 &lt;/script&gt;
 		</code>
 				</pre>
