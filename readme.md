@@ -1,7 +1,7 @@
 <h1>Accessibility Toolbar Plugin</h1>
 
 <p>
-	<img src="https://raw.githubusercontent.com/agragregra/optimizedhtml-start-template/master/app/img/preview.jpg" alt="Start HTML Template">
+	<img src="https://raw.githubusercontent.com/mickidum/acc_toolbar/master/acctoolbar/poster.jpg" alt="Accessibility Toolbar Plugin Poster">
 </p>
 <p>Author: <a href="http://webworks.ga">mickidum</a></p>
 <p>
