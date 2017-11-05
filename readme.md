@@ -4,17 +4,37 @@
 	<img src="https://raw.githubusercontent.com/agragregra/optimizedhtml-start-template/master/app/img/preview.jpg" alt="Start HTML Template">
 </p>
 
-<p>Author: <a href="http://webworks.ga">WebDesign Master</a> | <a href="http://webdesign-master.ru/blog/tools/2016-08-19-optimizedhtml.html" target="_blank">Manual in Russian</a></p>
+<p>Author: <a href="http://webworks.ga">mickidum</a></p>
 
-<p>OptimizedHTML is all-inclusive, optimized for Google PageSpeed start HTML5 template with Bootstrap (grid only), Gulp, Sass, Browsersync, Autoprefixer, Clean-CSS, Uglify, Imagemin, Vinyl-FTP and Bower (libs path) support. The template contains a <strong>.htaccess</strong> file with caching rules for web server.</p>
+<p>Accessibility Toolbar Plugin is simple toolbar</p>
+<p>
+Accessibility Toolbar Plugin is simple accessibility component, including a variety of tools.
+This component allows users with disabilities easy and convenient way to browse most websites.
+</p>
 
 
-<h2>How to use OptimizedHTML</h2>
+<h2>How to use Accessibility Toolbar</h2>
 
 <ol>
-	<li><a href="https://github.com/agragregra/optimizedhtml-start-template/archive/master.zip">Download</a> <strong>optimizedhtml-start-template</strong> from GitHub;</li>
-	<li>Install Node Modules: <strong>npm i</strong>;</li>
-	<li>Run the template: <strong>gulp</strong>.</li>
+	<li><a href="https://raw.githubusercontent.com/mickidum/acc_toolbar/master/acctoolbar/acctoolbar.min.js">Download(Right click and save)</a> <strong>Accessibility Toolbar Plugin</strong></li>
+	<li>Store this file in your website directory (i.e. /public_html)</li>
+	<li>
+		<p>Add script to website</p>
+		<code>
+			<script src="path/to/script/where/stored/acctoolbar.min.js"></script>
+			// optional
+			<script>
+				window.onload = function() {	
+				  window.micAccessTool = new MicAccessTool({
+				  	link: '[link to your accesibility statement page]',
+				  	contact: '[link to your contact page or "maitto" link]',
+				  	buttonPosition: '[default is "left"] may be "right"',
+				  	forceLang: '[default english] may be he-IL'
+				  });
+				};
+			</script>
+		</code>
+	</li>
 </ol>
 
 <h2>Gulp tasks:</h2>
