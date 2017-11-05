@@ -1,0 +1,429 @@
+
+#mic-init-access-tool {
+// RESET
+button {
+	border: none;
+  outline: none;
+  box-shadow: none;
+  background: none;
+}
+
+a {
+	outline: none;
+	display: inline-block;
+	color: #333;
+	
+	width: 100%;
+	line-height: 1;
+	&:focus, &:hover {
+		color: darkred;
+		border-color: darkred;
+		background-color: #ffffcc;
+		font-weight: bold;
+	}
+}
+
+span.mic-toolbox-images-titles {
+	display: none !important;
+}
+* {
+	font-size: initial !important;
+}
+
+// BUTTON
+.mic-access-tool-general-button {
+	position: fixed;
+	z-index: 99999;
+	display: block;
+	top: 30vh;
+	left: 0;
+	background-color: #17384c;
+	cursor: pointer;
+	border: solid 2px white;
+	border-left: none;
+	border-radius: 0 5px 30px 0;
+	color: #fff;
+	> div {
+		position: relative;
+		text-align: center;
+		padding: 5px 10px;
+		span {
+			display: block;
+			margin-bottom: 5px;
+			line-height: 1;
+			font-weight: bold;
+			font-size: 14px !important;
+			font-family: Arial, Helvetica, sans-serif !important;
+		}
+		img {
+			display: inline-block;
+		}
+	}
+	&.mic-access-tool-general-button-right {
+		left: auto;
+		right: 0;
+		border-right: none;
+		border: solid 2px white;
+		border-radius: 5px 0 0 30px;
+	}
+	&:focus, &:hover {
+		color: darkred;
+		border-color: darkred;
+		background-color: #ffffcc;
+	}
+}
+
+// BOX TOOL
+	.mic-access-tool-box {
+		overflow-y: auto;
+		box-shadow: 1px 0 4px 0 #777;
+		position: fixed;
+		height: 100vh;
+		width: 320px;
+		top: 0;
+		left: 0;
+		background-color: #003333;
+		z-index: 9999999;
+		visibility: hidden;
+		opacity: 0;
+		transition: opacity .4s;
+		> div:not(.mic-access-tool-box-header):not(.mic-toolbox-all-credits) {
+			position: relative;
+			background-color: #fff;
+			max-width: 96%;
+			margin: 0 auto 5px;
+			text-align: center;
+			.mic-subtitle-span {
+				font-size: 20px !important;
+				display: block;
+				padding: 10px 0;
+				font-weight: bold;
+				text-align: center;
+				color: #333;
+			}
+		}
+		&.opened-mic-access-tool {
+			visibility: visible;
+			opacity: 1;
+		}
+		&.mic-access-tool-box-right {
+			left: auto;
+			right: 0;
+		}
+		.mic-access-tool-box-header {
+			position: relative;
+			width: 100%;
+			font-family: arial, sans-serif;
+			text-align: left;
+			text-transform: uppercase;
+			line-height: 1.2;
+			font-size: 14px !important;
+			font-weight: bold;
+			padding: 10px;
+			color: #fff;
+			button {
+				position: absolute;
+				display: inline-block;
+				cursor: pointer;
+				color: #fff;
+				font-weight: bold;
+				line-height: 1.1;
+				font-size: 18px !important;
+				right: 0;
+				top: 0;
+				padding: 8px 5px 8px;
+				* {
+					font-size: 18px !important;
+				}
+				&:focus, &:hover {
+					color: darkred;
+					background-color: #ffffcc;
+				}
+			}
+		}
+
+		.link-access-page {
+			background-color: #fff;
+			position: relative;
+			height: auto;
+			text-align: center;
+			max-width: 96%;
+			margin-top: 10px !important;
+			margin-bottom: 20px !important;
+			a {
+				padding: 10px 0;
+				border-bottom: 1px solid #777;
+			}
+			* {
+				font-size: 18px !important;
+			}
+			#mic-disable-buttons-reset-all {
+				text-align: center;
+				font-weight: bold;
+				color: darkred;
+			}
+		}
+
+		.mic-disable-buttons, .link-access-page {
+			button {
+				position: relative;
+				padding: 10px;
+				border-bottom: 1px solid #777;
+				display: block;
+				width: 100%;
+				font-size: 18px !important;
+				span, img {
+					display: inline-block;
+					vertical-align: middle;
+					font-size: 18px !important;
+				}
+				&:hover, &:focus {
+					color: darkred;
+			    border-color: darkred;
+			    background-color: #ffffcc !important;
+			    font-weight: bold;
+			    cursor: pointer;
+				}
+				&.vi-enabled {
+					border: dashed 2px darkred;
+					background-color: #fffff3;
+					span {
+						color: darkred !important;
+						font-weight: bold; 
+					}
+					&::before {
+						content: "\\2713";
+						position: absolute;
+						top: 2px;
+						right: 2px;
+						color: #00e800;
+						font-weight: bold;
+						font-size: 20px !important;
+					}
+				}
+			}
+		}
+
+		.mic-buttons-block {
+			padding-bottom: 10px;
+			&.mic-fonts-block {
+				button {
+					span {
+						display: block;
+						position: absolute;
+						width: 100%;
+						right: 0;
+						&:first-child {
+							top: 14px;
+						}
+						&:last-child {
+							bottom: 8px;
+						}
+					}
+					
+					// &#mic-fonts-simple {
+					// 	span:first-child {
+					// 		font-size: 32px !important;
+					// 		color: #000;
+					// 		line-height: 0.5;
+					// 	}
+					// }
+				}
+			}
+			&.mic-cursors-block {
+				button {
+					span:last-child {
+						margin-top: 5px;
+					}
+				}
+			}
+			
+			button {
+				cursor: pointer;
+				display: inline-block;
+				padding: 0 5px;
+				position: relative;
+				text-align: center;
+				width: 30%;
+				height: 80px;
+				border: solid 1px silver;
+				vertical-align: middle;
+				line-height: 1;
+				font-weight: bold;
+				font-size: 16px !important;
+				span {
+					display: block;
+					line-height: 0.9;
+					font-size: 16px !important;
+				}
+				&:focus, &:hover {
+					color: darkred;
+					border-color: darkred;
+					background-color: #ffffcc !important;
+				}
+				&.vi-enabled {
+					border: dashed 2px darkred;
+					background-color: #fffff3;
+					span {
+						color: darkred !important; 
+					}
+					&::before {
+						content: "\\2713  הופעל";
+						position: absolute;
+						top: 2px;
+						right: 2px;
+						color: #00e800;
+						font-weight: bold;
+						font-size: 12px !important;
+					}
+				}
+			}
+		}
+		.mic-toolbox-all-credits {
+			position: relative !important;
+			padding: 0 5px !important;
+			background-color: #003333	!important;
+			text-align: center !important;
+			a, span {
+				display: inline-block !important;
+				vertical-align: middle !important;
+				color: #fff !important;
+				width: auto !important;
+				font-family: monospace !important;
+				font-weight: bold !important;
+				font-size: 15px !important;
+			}
+			a {
+				text-decoration: underline !important;
+				&:hover, &:focus {
+					background-color: transparent !important;
+				}
+			}
+		}
+	}
+
+	// SMALL SCREENS
+	@media screen and (max-width: 47em) {
+		.mic-access-tool-general-button {
+			> div {
+				span {
+					display: none;
+				}
+			}
+		}
+		#mic-disable-buttons-keyboard {
+			display: none;
+		}
+		.mic-access-tool-box {
+			width: 100%;
+		}
+		.mic-cursors-block {
+			display: none;
+		}
+	}
+
+}
+body.mic-toolbox-zoom-up > :not(#mic-init-access-tool) {
+	zoom: 1.4 !important;
+	-moz-transform: scale(1.4) !important;
+	-moz-transform-origin: 40% 0 !important;
+}
+// CONTRAST MONOCHROME
+body.mic-toolbox-contrast-monochrome {
+	> :not(#mic-init-access-tool) {
+		filter: grayscale(1) !important;
+	}
+}
+
+// CONTRAST WHITE
+body.mic-toolbox-contrast-soft, 
+body.mic-toolbox-contrast-soft > :not(#mic-init-access-tool), 
+body.mic-toolbox-contrast-soft > :not(#mic-init-access-tool) *:not(img), {
+	color: Black !important;
+  background: transparent !important;
+}
+
+// CONTRAST INVERT
+body.mic-toolbox-contrast-hard > :not(#mic-init-access-tool) {
+  filter: invert(100%) !important;
+}
+
+// DISABLE ANIMATIONS
+body.mic-toolbox-disable-buttons-animations * {
+	transition-property: none !important;
+	animation: none !important;
+	transform: none !important;
+	animation-name: none !important;	
+}
+
+// KEYBOARD SERFING
+body.mic-toolbox-disable-buttons-keyboard > :not(#mic-init-access-tool) {
+	a, button, h1, h2, h3, h4, h5, h6, p, input, li {
+		&:focus {
+			outline: black solid thick !important;
+			background: yellow !important;
+			color: #000 !important;
+			box-shadow: 0 0 10px 5px #333 !important;
+			padding: 10px 20px !important;
+		}
+	}
+}
+
+// RESTORE DEFAULT FONT
+body.mic-toolbox-fonts-simple {
+	* {
+		font-family: Arial, Helvetica, sans-serif !important;
+	}
+}
+
+// LINKS UNDERLINE
+body.mic-toolbox-content-links {
+	a {
+		text-decoration: underline !important;
+	}
+}
+
+// LINKS UNDERLINE
+body.mic-toolbox-content-headers {
+	h1, h2, h3, h4, h5, h6 {
+		text-decoration: underline !important;
+	}
+}
+
+// CURSORS
+body {
+	&.mic-toolbox-cursor-big-white {
+		// cursor: url('../img/cursors/w21.png'), url('../img/bigcursorwhite.cur'), default !important;
+		cursor: url('../img/cursors/w2.cur'), default !important;
+		button, a {
+			// cursor: url('../img/cursors/hw21.png'), url('../img/bighandwhite.cur'), default !important;
+			cursor: url('../img/cursors/wh2.cur'), default !important;
+		}
+	}
+	&.mic-toolbox-cursor-big-black {
+		// cursor: url('../img/cursors/b2.png'), url('../img/bigcursorblack.cur'), default !important;
+		cursor: url('../img/cursors/b2.cur'), default !important;
+		button, a {
+			// cursor: url('../img/cursors/hb.png'), url('../img/bighandblack.cur'), default !important;
+			cursor: url('../img/cursors/bh2.cur'), default !important;
+		}
+	}
+}
+
+body.mic-toolbox-content-images {
+	span.mic-toolbox-images-titles {
+		display: block !important;
+		font-size: 20px !important;
+		max-width: 180px !important;
+		line-height: 1 !important;
+		margin: 0 auto !important;
+		font-weight: bold !important;
+		text-align: center !important;
+		background: #ffffe0 !important;
+		color: black !important;
+		box-shadow: 0 0 20px 2px #333 !important;
+		padding: 10px !important;
+		border: solid 2px darkred !important;
+		border-radius: 50px !important;
+	}
+}

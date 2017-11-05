@@ -1,0 +1,68 @@
+{
+  "he": {
+    "btn_open": "תפריט נגישות",
+    "btn_close": "סגור",
+    "keyboard_root": "ניווט מקלדת",
+    "disable_animattions": "חסימת אנימציות",
+    "access_declaration": "הצהרת נגישות",
+    "debug_contacts": "דווח על בעיית נגישות",
+    "reset_all_settings": "בטל נגישות",
+    "contrast_block": {
+      "header": "ניגודיות צבעים",
+      "btn_monochrome": "תצוגת<br>מונוכרום",
+      "btn_bright": "ניגודיות<br>בהירה",
+      "btn_invert": "ניגודיות<br>הפוכה"
+    },
+    "text_block": {
+      "header": "גודל טקסט",
+      "btn_font_up": "הגדלת<br>גופון",
+      "btn_font_down": "הקטנת<br>גופון",
+      "btn_font_readable": "גופון<br>קריא"
+    },
+    "content_block": {
+      "header": "הדגשת תוכן",
+      "btn_underline_links": "הדגשת<br>קישורים",
+      "btn_underline_headers": "הדגשת<br>כותרות",
+      "btn_images_titles": "תיאור<br>לתמונות"
+    },
+    "zoom_block": {
+      "header": "הגדלת תצוגה",
+      "btn_cursor_white": "סמן לבן<br>גדול",
+      "btn_cursor_black": "סמן שחור<br>גדול",
+      "btn_zoom_in": "הגדלת<br>תצוגה"
+    }
+  },
+  "en": {
+    "btn_open": "Accessibility Menu",
+    "btn_close": "close",
+    "keyboard_root": "Keyboard navigation",
+    "disable_animattions": "Block animations",
+    "access_declaration": "Accessibility Statement",
+    "debug_contacts": "Report an accessibility problem",
+    "reset_all_settings": "Reset settings",
+    "contrast_block": {
+      "header": "Color contrast",
+      "btn_monochrome": "uncolored<br>display",
+      "btn_bright": "bright<br>contrast",
+      "btn_invert": "reverse<br>contrast"
+    },
+    "text_block": {
+      "header": "Text size",
+      "btn_font_up": "increase<br>text",
+      "btn_font_down": "decrease<br>text",
+      "btn_font_readable": "readable<br>text"
+    },
+    "content_block": {
+      "header": "Highlighting content",
+      "btn_underline_links": "underline<br>links",
+      "btn_underline_headers": "underline<br>headers",
+      "btn_images_titles": "images<br>titles"
+    },
+    "zoom_block": {
+      "header": "Zoom in",
+      "btn_cursor_white": "big white<br>cursor",
+      "btn_cursor_black": "big black<br>cursor",
+      "btn_zoom_in": "zoom<br>screen"
+    }
+  }
+}
