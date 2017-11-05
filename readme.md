@@ -20,18 +20,18 @@ This component allows users with disabilities easy and convenient way to browse 
 			<div class="highlight">
 				<pre class="highlight">
 					<code>
-			&lt;script src="path/to/script/where/stored/acctoolbar.min.js"&gt;&lt;/script&gt;
-			// optional
-			&lt;script&gt;
-				window.onload = function() {	
-				  window.micAccessTool = new MicAccessTool({
-				  	link: '[link to your accesibility statement page]',
-				  	contact: '[link to your contact page or "maitto" link]',
-				  	buttonPosition: '[default is "left"] may be "right"',
-				  	forceLang: '[default english] may be he-IL'
-				  });
-				};
-			&lt;/script&gt;
+&lt;script src="path/to/script/where/stored/acctoolbar.min.js"&gt;&lt;/script&gt;
+// optional
+&lt;script&gt;
+window.onload = function() {	
+window.micAccessTool = new MicAccessTool({
+link: '[link to your accesibility statement page]',
+contact: '[link to your contact page or "maitto" link]',
+buttonPosition: '[default is "left"] may be "right"',
+forceLang: '[default english] may be he-IL'
+});
+};
+&lt;/script&gt;
 		</code>
 				</pre>
 			</div>
