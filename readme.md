@@ -20,6 +20,7 @@ This component allows users with disabilities easy and convenient way to browse 
 	<li>Store this file in your website directory (i.e. /public_html)</li>
 	<li>
 		<p>Add script to website</p>
+		<pre>
 		<code>
 			<script src="path/to/script/where/stored/acctoolbar.min.js"></script>
 			// optional
@@ -34,6 +35,7 @@ This component allows users with disabilities easy and convenient way to browse 
 				};
 			</script>
 		</code>
+	</pre>
 	</li>
 </ol>
 
