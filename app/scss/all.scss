@@ -31,9 +31,9 @@ span.mic-toolbox-images-titles {
 }
 
 * {
-	font-size: 14px;
+	font-size: 14px !important;
 	font-family: Arial, Helvetica, sans-serif !important;
-	text-decoration: none;
+	text-decoration: none !important;
 }
 
 // BUTTON
@@ -50,6 +50,7 @@ span.mic-toolbox-images-titles {
 	border-radius: 0 5px 30px 0;
 	color: #fff;
 	> div {
+		font-size: 0 !important;
 		position: relative;
 		text-align: center;
 		padding: 5px 10px;
