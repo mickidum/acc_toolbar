@@ -24,30 +24,30 @@ This component allows users with disabilities easy and convenient way to browse 
 
 // optional init
 &lt;script&gt;
-	window.onload = function() {	
-		window.micAccessTool = new MicAccessTool({
-			link: '[link to your accesibility statement page]',
-			contact: '[link to your contact page or "maitto" link]',
-			buttonPosition: '[default is "left"] may be "right"',
-			forceLang: '[default english] may be he-IL'
-		});
-	};
+ window.onload = function() {	
+  window.micAccessTool = new MicAccessTool({
+   link: '[link to your accesibility statement page]',
+   contact: '[link to your contact page or "mailto" link]',
+   buttonPosition: '[default is "left"] may be "right"',
+   forceLang: '[default english] may be he-IL'
+  });
+ };
 &lt;/script&gt;
 		</code>
 				</pre>
 			</div>
 		</div>
 	</li>
-	<li>that's all</li>
+	<li>That's all</li>
 </ol>
 
 <h2>For Developers</h2>
 
-<ul>
+<ol>
 	<li>Clone or download this <a href="{{ site.github.repository_url }}">repo</a></li>
-	<li>install <strong>gulp.js</strong> - write in terminal <em>npm install gulp -g</em></li>
+	<li>Install <strong>gulp.js</strong> - write in terminal <em>npm install gulp -g</em></li>
 	<li><em>cd [installed repo folder]</em></li>
-	<li>write in terminal - <em>npm install</em></li>
-	<li>write gulp to run</li>
-	<li>now you can play :)</li>
-</ul>
+	<li>Write in terminal - <em>"npm install"</em></li>
+	<li>Write in terminal "gulp" to run app</li>
+	<li>Now you can change it.</li>
+</ol>
