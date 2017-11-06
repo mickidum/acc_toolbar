@@ -45,9 +45,9 @@ This component allows users with disabilities easy and convenient way to browse 
 
 <ol>
 	<li>Clone or download this <a href="{{ site.github.repository_url }}">repo</a></li>
-	<li>Install <strong>gulp.js</strong> - write in terminal <em>npm install gulp -g</em></li>
+	<li>Install <strong>gulp.js</strong> - write in terminal <em>"npm install gulp -g"</em></li>
 	<li><em>cd [installed repo folder]</em></li>
 	<li>Write in terminal - <em>"npm install"</em></li>
-	<li>Write in terminal "gulp" to run app</li>
+	<li>Write in terminal - <em>"gulp"</em> to run app</li>
 	<li>Now you can change it.</li>
 </ol>
