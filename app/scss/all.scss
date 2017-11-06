@@ -35,7 +35,6 @@ span.mic-toolbox-images-titles {
 	font-size: 14px !important;
 	font-family: Arial, Helvetica, sans-serif !important;
 	text-decoration: none !important;
-	color: #333 !important;
 }
 
 // BUTTON
@@ -84,6 +83,7 @@ span.mic-toolbox-images-titles {
 
 // BOX TOOL
 	.mic-access-tool-box {
+		color: #333;
 		overflow-y: auto;
 		box-shadow: 1px 0 4px 0 #777;
 		position: fixed;
