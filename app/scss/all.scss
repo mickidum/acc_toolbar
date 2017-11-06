@@ -5,6 +5,7 @@ button {
   outline: none;
   box-shadow: none;
   background: none;
+  border-radius: 0;
 }
 
 a {
@@ -248,6 +249,7 @@ span.mic-toolbox-images-titles {
 				line-height: 1;
 				font-weight: bold;
 				font-size: 16px !important;
+				border-radius: 3px;
 				span {
 					display: block;
 					line-height: 0.9;
@@ -265,7 +267,8 @@ span.mic-toolbox-images-titles {
 						color: darkred !important; 
 					}
 					&::before {
-						content: "\\2713  הופעל";
+						content: "enabled \\2713";
+						direction: ltr !important;
 						position: absolute;
 						top: 2px;
 						right: 2px;
