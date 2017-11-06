@@ -24,14 +24,14 @@ This component allows users with disabilities easy and convenient way to browse 
 
 // optional init
 &lt;script&gt;
- window.onload = function() {	
-  window.micAccessTool = new MicAccessTool({
-   link: '[link to your accesibility statement page]',
-   contact: '[link to your contact page or "mailto" link]',
-   buttonPosition: '[default is "left"] may be "right"',
-   forceLang: '[default english] may be he-IL'
-  });
- };
+  window.onload = function() {	
+    window.micAccessTool = new MicAccessTool({
+      link: '[link to your accesibility statement page]',
+      contact: '[link to your contact page or "mailto" link]',
+      buttonPosition: '[default is "left"] may be "right"',
+      forceLang: '[default english] may be he-IL'
+    });
+  };
 &lt;/script&gt;
 		</code>
 				</pre>
