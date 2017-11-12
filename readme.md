@@ -9,8 +9,8 @@ Accessibility Toolbar Plugin is simple accessibility component, including a vari
 This component allows users with disabilities easy and convenient way to browse most websites.
 </p>
 
-<h2>How to use Accessibility Toolbar</h2>
-<a href="http://webworks.ga/acc_toolbar">acc toolbox</a>
+<h2>How to use Accessibility Toolbar <a href="http://webworks.ga/acc_toolbar">(acc toolbox)</a></h2>
+
 <ol>
 	<li><a href="https://raw.githubusercontent.com/mickidum/acc_toolbar/master/acctoolbar/acctoolbar.min.js">Download(Right click and save)</a> <strong>Accessibility Toolbar Plugin</strong></li>
 	<li>Store this file in your website directory (i.e. /public_html)</li>
