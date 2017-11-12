@@ -220,12 +220,27 @@ span.mic-toolbox-images-titles {
 						position: absolute;
 						width: 100%;
 						right: 0;
-						&:first-child {
+						&:nth-child(1) {
 							top: 14px;
 						}
-						&:last-child {
+						&:nth-child(2) {
 							bottom: 8px;
 						}
+						&:nth-child(3) {
+							top: 2px !important;
+					    right: 2px !important;
+					    color: #00e800 !important;
+					    display: inline-block !important;
+					    width: auto !important;
+					    font-size: 12px !important;
+					    direction: ltr !important;
+					    line-height: 1 !important;
+					    font-family: monospace !important;
+						}
+					}
+					&.vi-font-enabled {
+						border: dashed 1px darkred;
+						background-color: #fffff3;
 					}
 				}
 			}

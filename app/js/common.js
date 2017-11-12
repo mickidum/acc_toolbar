@@ -232,6 +232,7 @@ MicAccessTool.prototype.fontsChange = function(event) {
 	}
 
 	window.MICTOOLBOXAPPSTATE.fontSize = counter;
+	MicAccessTool.prototype.getFontsChanges(counter);
 	MicAccessTool.prototype.updateState();
 	
 }
@@ -252,6 +253,9 @@ MicAccessTool.prototype.initFontsChange = function() {
 			var fs = Number(font[0]);
 			item.style.fontSize = (fs * initFontSize).toFixed() + 'px';
 		}
+		if (initFontSize) {
+			this.getFontsChanges(initFontSize);
+		}
 }
 
 MicAccessTool.prototype.initFontsChangeFirst = function() {
@@ -262,6 +266,19 @@ MicAccessTool.prototype.initFontsChangeFirst = function() {
 			item.style.fontSize = font;
 			var fs = item.style.fontSize.split('px');
 		}
+}
+
+MicAccessTool.prototype.getFontsChanges = function(initFontSize) {
+	if (initFontSize > 1) {
+		document.getElementById('mic-toolbox-fonts-up').classList.add('vi-font-enabled');
+		var initPerc = (Number(initFontSize) * 100 - 100).toFixed();
+		var perc = '+' + initPerc + '%';
+		document.getElementById('mic-toolbox-fonts-up-enabled').textContent = perc;
+	}
+	else {
+		document.getElementById('mic-toolbox-fonts-up').classList.remove('vi-font-enabled');
+		document.getElementById('mic-toolbox-fonts-up-enabled').textContent = '';
+	}
 }
 
 // IMAGES CHANGE
