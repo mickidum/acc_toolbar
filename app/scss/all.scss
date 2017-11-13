@@ -192,7 +192,7 @@ span.mic-toolbox-images-titles {
 			    cursor: pointer;
 				}
 				&.vi-enabled {
-					border: dashed 2px darkred;
+					border: dashed 1px darkred;
 					background-color: #fffff3;
 					span {
 						color: darkred !important;
@@ -204,8 +204,9 @@ span.mic-toolbox-images-titles {
 						top: 2px;
 						right: 2px;
 						color: #00e800;
-						font-weight: bold;
-						font-size: 20px !important;
+						font-weight: bold !important;
+						line-height: 1 !important;
+						font-size: 14px !important;
 					}
 				}
 			}
@@ -241,6 +242,9 @@ span.mic-toolbox-images-titles {
 					&.vi-font-enabled {
 						border: dashed 1px darkred;
 						background-color: #fffff3;
+						span {
+							color: darkred;
+						}
 					}
 				}
 			}
@@ -277,13 +281,13 @@ span.mic-toolbox-images-titles {
 					background-color: #ffffcc !important;
 				}
 				&.vi-enabled {
-					border: dashed 2px darkred;
+					border: dashed 1px darkred;
 					background-color: #fffff3;
 					span {
 						color: darkred !important; 
 					}
 					&::before {
-						content: "enabled \\2713";
+						content: "\\2713";
 						direction: ltr !important;
 						position: absolute;
 						top: 2px;
