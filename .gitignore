@@ -2,5 +2,8 @@
 /dist/
 /.git/
 /app/css/
+/app/js/zur.js
+/app/minjs/
+/app/scss/zur.scss
 /**/*.psd
 /**/Thumbs.db

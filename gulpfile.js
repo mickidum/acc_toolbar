@@ -23,7 +23,7 @@ gulp.task('minify-html', function() {
 
 gulp.task('common-js', function() {
 	return gulp.src([
-		'app/js/common.js',
+		'app/js/**/*.js',
 		])
 	.pipe(fileinclude({
       prefix: '@@',
@@ -31,7 +31,7 @@ gulp.task('common-js', function() {
    }))
 	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(uglify())
-	.pipe(gulp.dest('app/js'))
+	.pipe(gulp.dest('app/minjs'))
 	.pipe(browserSync.reload({stream: true}));
 });
 
