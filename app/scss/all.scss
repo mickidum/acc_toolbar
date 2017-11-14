@@ -39,9 +39,9 @@ span.mic-toolbox-images-titles {
 
 // BUTTON
 .mic-access-tool-general-button {
-	position: fixed;
-	z-index: 99999;
-	display: block;
+	position: fixed !important;
+	z-index: 99999 !important;
+	display: block !important;
 	top: 30vh;
 	left: 0;
 	background-color: #17384c;
@@ -50,11 +50,12 @@ span.mic-toolbox-images-titles {
 	border-left: none;
 	border-radius: 0 5px 30px 0;
 	color: #fff;
+	padding: 0;
 	> div {
 		font-size: 0 !important;
 		position: relative;
 		text-align: center;
-		padding: 5px 10px;
+		padding: 5px 14px !important;
 		span {
 			display: block;
 			margin-bottom: 5px;
