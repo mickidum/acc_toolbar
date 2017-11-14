@@ -68,7 +68,7 @@ gulp.task('watch', ['sass', 'browser-sync', 'common-js', 'minify-html'], functio
 gulp.task('build', ['removedist', 'sass', 'minify-html', 'common-js'], function() {
 
 	var buildFiles = gulp.src([
-		'app/js/common.min.js'
+		'app/minjs/common.min.js'
 		])
 	.pipe(rename('acctoolbar.min.js'))
 	.pipe(gulp.dest('acctoolbar'));
