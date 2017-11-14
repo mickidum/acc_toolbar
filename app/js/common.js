@@ -165,8 +165,8 @@ MicAccessTool.prototype.onceButtonChange = function(event) {
 	event.preventDefault();
 
 	if (this.id === 'mic-toolbox-disable-buttons-keyboard') {
-		MicAccessTool.prototype.keyboardRootEnable();
 		window.MICTOOLBOXAPPSTATE.keyboardRoot = !window.MICTOOLBOXAPPSTATE.keyboardRoot;
+		MicAccessTool.prototype.keyboardRootEnable();
 	}
 
 	if (this.id === 'mic-toolbox-content-images') {
@@ -189,11 +189,16 @@ MicAccessTool.prototype.onceButtonChange = function(event) {
 }
 
 MicAccessTool.prototype.keyboardRootEnable = function() {
-	var headers = document.querySelectorAll('h1,h2,h3,h4,h5,h6,p,a,button,input');
+	if (window.MICTOOLBOXAPPSTATE.keyboardRoot) {
+		var headers = document.querySelectorAll('h1,h2,h3,h4,h5,h6,p,a,button,input');
 		for (var i = 0; i < headers.length; i++) {
 			var item = headers[i];
 			item.tabIndex = i + 1
 		}
+	}
+	else {
+		window.location.reload();
+	}
 }
 
 // FONTS CHANGE
