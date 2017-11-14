@@ -60,7 +60,7 @@ gulp.task('sass', function() {
 
 gulp.task('watch', ['sass', 'browser-sync', 'common-js', 'minify-html'], function() {
 	gulp.watch('app/scss/**/*.scss', ['sass', 'common-js']);
-	gulp.watch(['app/js/common.js'], ['common-js']);
+	gulp.watch(['app/js/**/*.js'], ['common-js']);
 	gulp.watch(['app/htmlparts/**/*.html'], ['minify-html', 'common-js']);
 	gulp.watch('app/*.html', browserSync.reload);
 });
