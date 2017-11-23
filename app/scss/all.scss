@@ -401,7 +401,7 @@ body.mic-toolbox-disable-buttons-keyboard > :not(#mic-init-access-tool) {
 
 // RESTORE DEFAULT FONT
 body.mic-toolbox-fonts-simple {
-	* {
+	*:not(i):not(.fa) {
 		font-family: Arial, Helvetica, sans-serif !important;
 	}
 }
