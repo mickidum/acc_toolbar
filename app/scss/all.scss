@@ -6,13 +6,13 @@ button {
   box-shadow: none;
   background: none;
   border-radius: 0;
+  color: #333;
 }
 
 a {
 	outline: none;
 	display: inline-block;
 	color: #333;
-	
 	width: 100%;
 	line-height: 1;
 	&:focus, &:hover {
@@ -35,7 +35,7 @@ span.mic-toolbox-images-titles {
 	font-size: 14px !important;
 	font-family: Arial, Helvetica, sans-serif !important;
 	text-decoration: none !important;
-  user-select: none !important;
+	user-select: none !important;
 }
 
 // BUTTON
@@ -77,6 +77,9 @@ span.mic-toolbox-images-titles {
 		border-radius: 5px 0 0 30px;
 	}
 	&:focus, &:hover {
+		span {
+			color: darkred;
+		}
 		color: darkred;
 		border-color: darkred;
 		background-color: #ffffcc;
@@ -185,6 +188,7 @@ span.mic-toolbox-images-titles {
 					display: inline-block;
 					vertical-align: middle;
 					font-size: 18px !important;
+					color: #333;
 				}
 				&:hover, &:focus {
 					color: darkred;
@@ -221,6 +225,7 @@ span.mic-toolbox-images-titles {
 					span {
 						display: block;
 						position: absolute;
+						color: #333;
 						width: 100%;
 						right: 0;
 						&:nth-child(1) {
@@ -276,6 +281,7 @@ span.mic-toolbox-images-titles {
 					display: block;
 					line-height: 0.9;
 					font-size: 16px !important;
+					color: #333;
 				}
 				&:focus, &:hover {
 					color: darkred;
