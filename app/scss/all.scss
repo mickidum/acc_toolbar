@@ -16,6 +16,9 @@ a {
 	width: 100%;
 	line-height: 1;
 	&:focus, &:hover {
+		span {
+			color: darkred;
+		}
 		color: darkred;
 		border-color: darkred;
 		background-color: #ffffcc;
@@ -148,6 +151,9 @@ span.mic-toolbox-images-titles {
 					font-size: 18px !important;
 				}
 				&:focus, &:hover {
+					span {
+						color: darkred;
+					}
 					color: darkred;
 					background-color: #ffffcc;
 				}
@@ -191,6 +197,9 @@ span.mic-toolbox-images-titles {
 					color: #333;
 				}
 				&:hover, &:focus {
+					span {
+						color: darkred;
+					}
 					color: darkred;
 			    border-color: darkred;
 			    background-color: #ffffcc !important;
@@ -284,6 +293,9 @@ span.mic-toolbox-images-titles {
 					color: #333;
 				}
 				&:focus, &:hover {
+					span {
+						color: darkred;
+					}
 					color: darkred;
 					border-color: darkred;
 					background-color: #ffffcc !important;
