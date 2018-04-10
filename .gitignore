@@ -1,9 +1,11 @@
 /node_modules/
 /dist/
 /.git/
-/app/css/
+/app/css/*.css
 /app/js/zur.js
 /app/minjs/
 /app/scss/zur.scss
 /**/*.psd
 /**/Thumbs.db
+app/css/all.min.css
+
