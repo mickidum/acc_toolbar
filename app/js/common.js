@@ -340,7 +340,7 @@ MicAccessTool.prototype.updateState = function() {
 
 MicAccessTool.prototype.openBox = function(event) {
 	this.toolBox.classList.add('opened-mic-access-tool');
-	if (!window.MICTOOLBOXAPPSTATE.initFontSize) {
+	if (!window.MICTOOLBOXAPPSTATE.initFontSize || window.MICTOOLBOXAPPSTATE.fontSize <= 1) {
 		this.initFontsChangeFirst();
 		window.MICTOOLBOXAPPSTATE.initFontSize = true;
 	}
