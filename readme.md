@@ -16,12 +16,10 @@ This component allows users with disabilities easy and convenient way to browse 
 <p>add this link to your website</p>
 
 <div class="language-js highlighter-rouge">
-				<pre class="highlight">
-					<code>
-&lt;script src="path/to/script/where/stored/acctoolbar.min.js"&gt;&lt;/script&gt;
-		</code>
-				</pre>
-		</div>
+		<pre class="highlight">
+			<code>&lt;script src="path/to/script/where/stored/acctoolbar.min.js"&gt;&lt;/script&gt;</code>
+		</pre>
+</div>
 
 <ol>
 	<li><a href="https://raw.githubusercontent.com/mickidum/acc_toolbar/master/acctoolbar/acctoolbar.min.js">Download(Right click and save)</a> <strong>Accessibility Toolbar Plugin</strong></li>
