@@ -15,11 +15,11 @@ This component allows users with disabilities easy and convenient way to browse 
 
 add this link to your website
 
-<div class="language-html highlighter-rouge">
+<div class="language-js highlighter-rouge">
 			<div class="highlight">
 				<pre class="highlight">
 					<code>
-https://cdn.rawgit.com/mickidum/acc_toolbar/master/acctoolbar/acctoolbar.min.js
+<script src="https://cdn.rawgit.com/mickidum/acc_toolbar/master/acctoolbar/acctoolbar.min.js"></script>
 		</code>
 				</pre>
 			</div>
