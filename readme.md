@@ -11,20 +11,17 @@ This component allows users with disabilities easy and convenient way to browse 
 
 <h2>How to use Accessibility Toolbar <a href="http://webworks.ga/acc_toolbar">(acc toolbox)</a></h2>
 
-### CDN
+<h4>CDN</h4>
 
-add this link to your website
+<p>add this link to your website</p>
 
 <div class="language-js highlighter-rouge">
-			<div class="highlight">
 				<pre class="highlight">
 					<code>
-<script src="https://cdn.rawgit.com/mickidum/acc_toolbar/master/acctoolbar/acctoolbar.min.js"></script>
+&lt;script src="path/to/script/where/stored/acctoolbar.min.js"&gt;&lt;/script&gt;
 		</code>
 				</pre>
-			</div>
 		</div>
-
 
 <ol>
 	<li><a href="https://raw.githubusercontent.com/mickidum/acc_toolbar/master/acctoolbar/acctoolbar.min.js">Download(Right click and save)</a> <strong>Accessibility Toolbar Plugin</strong></li>
