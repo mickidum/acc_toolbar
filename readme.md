@@ -5,7 +5,7 @@
 </p>
 
 <p>
-Accessibility Toolbar Plugin is simple accessibility component, including a variety of tools.
+Accessibility Toolbar Plugin is simple accessibility component without dependencies (clean javascript), including a variety of tools.
 This component allows users with disabilities easy and convenient way to browse most websites.
 </p>
 
@@ -13,10 +13,12 @@ This component allows users with disabilities easy and convenient way to browse 
 
 <h4>CDN</h4>
 
-<p>add this link to your website</p>
+<p>Add this script to your website</p>
 
 <pre class="highlight">
-	<code>&lt;script src="path/to/script/where/stored/acctoolbar.min.js"&gt;&lt;/script&gt;</code>
+<code>
+&lt;script src="https://cdn.rawgit.com/mickidum/acc_toolbar/master/acctoolbar/acctoolbar.min.js"&gt;&lt;/script&gt;
+</code>
 </pre>
 
 <ol>
