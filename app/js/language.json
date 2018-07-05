@@ -33,33 +33,33 @@
     }
   },
   "en": {
-    "btn_open": "Accessibility Menu",
+    "btn_open": "accessibility menu",
     "btn_close": "close",
-    "keyboard_root": "Keyboard navigation",
-    "disable_animattions": "Block animations",
-    "access_declaration": "Accessibility Statement",
-    "debug_contacts": "Report an accessibility problem",
-    "reset_all_settings": "Reset settings",
+    "keyboard_root": "keyboard navigation",
+    "disable_animattions": "block animations",
+    "access_declaration": "accessibility statement",
+    "debug_contacts": "report an accessibility problem",
+    "reset_all_settings": "reset settings",
     "contrast_block": {
-      "header": "Color contrast",
+      "header": "color contrast",
       "btn_monochrome": "uncolored<br>display",
       "btn_bright": "bright<br>contrast",
       "btn_invert": "reverse<br>contrast"
     },
     "text_block": {
-      "header": "Text size",
+      "header": "text size",
       "btn_font_up": "increase<br>text",
       "btn_font_down": "decrease<br>text",
       "btn_font_readable": "readable<br>text"
     },
     "content_block": {
-      "header": "Highlighting content",
+      "header": "highlighting content",
       "btn_underline_links": "underline<br>links",
       "btn_underline_headers": "underline<br>headers",
       "btn_images_titles": "images<br>titles"
     },
     "zoom_block": {
-      "header": "Zoom in",
+      "header": "zoom in",
       "btn_cursor_white": "big white<br>cursor",
       "btn_cursor_black": "big black<br>cursor",
       "btn_zoom_in": "zoom<br>screen"
