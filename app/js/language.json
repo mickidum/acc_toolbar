@@ -42,27 +42,27 @@
     "reset_all_settings": "Сбросить настройки",
     "contrast_block": {
       "header": "Цветовой контраст",
-      "btn_monochrome": "Монохр. дисплей",
-      "btn_bright": "Светлый контраст",
-      "btn_invert": "Инверт. контраст"
+      "btn_monochrome": "монохр. дисплей",
+      "btn_bright": "светлый контраст",
+      "btn_invert": "инверт. контраст"
     },
     "text_block": {
       "header": "Размер текста",
-      "btn_font_up": "Увелич. шрифта",
-      "btn_font_down": "Уменьш. шрифта",
-      "btn_font_readable": "Читаемый шрифт"
+      "btn_font_up": "увелич. шрифта",
+      "btn_font_down": "уменьш. шрифта",
+      "btn_font_readable": "читаемый шрифт"
     },
     "content_block": {
       "header": "Выделение содержимого",
-      "btn_underline_links": "Выдел. ссылки",
-      "btn_underline_headers": "Выдел. заголовки",
-      "btn_images_titles": "Названия картинок"
+      "btn_underline_links": "выдел. ссылки",
+      "btn_underline_headers": "выдел. заголовки",
+      "btn_images_titles": "названия картинок"
     },
     "zoom_block": {
       "header": "Увеличение контента",
-      "btn_cursor_white": "Белый курсор",
-      "btn_cursor_black": "Черный курсор",
-      "btn_zoom_in": "Увелич. дисплея"
+      "btn_cursor_white": "белый курсор",
+      "btn_cursor_black": "черный курсор",
+      "btn_zoom_in": "увелич. дисплея"
     }
   },
   "en": {
