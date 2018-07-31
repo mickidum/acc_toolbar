@@ -43,11 +43,10 @@ This component allows users with disabilities easy and convenient way to browse 
 	<li>Store this file in your website directory (i.e. /public_html)</li>
 	<li>
 		<p>Add script to website</p>
-		<div class="language-js highlighter-rouge">
-			<div class="highlight">
+		<div class="highlight highlight-source-js">
 				<pre class="highlight">
-					<script src="path/to/script/where/stored/acctoolbar.min.js"></script>
 					<code>
+						<script src="path/to/script/where/stored/acctoolbar.min.js"></script>
 						<script>
 							window.onload = function() {
 								window.micAccessTool = new MicAccessTool({
@@ -60,7 +59,6 @@ This component allows users with disabilities easy and convenient way to browse 
 						</script>
 					</code>
 				</pre>
-			</div>
 		</div>
 	</li>
 	<li>That's all</li>
