@@ -23,7 +23,7 @@ This component allows users with disabilities easy and convenient way to browse 
 <pre class="highlight">
 <code>
 <script src="https://cdn.rawgit.com/mickidum/acc_toolbar/master/acctoolbar/acctoolbar.min.js"></script>
-<!-- optional init -->
+// optional init
 <script>
   window.onload = function() {
     window.micAccessTool = new MicAccessTool({
@@ -47,7 +47,7 @@ This component allows users with disabilities easy and convenient way to browse 
 <pre class="highlight">
 <code>
 <script src="path/to/script/where/stored/acctoolbar.min.js"></script>
-<!-- optional init -->
+// optional init
 <script>
   window.onload = function() {
     window.micAccessTool = new MicAccessTool({
