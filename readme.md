@@ -23,15 +23,16 @@ This component allows users with disabilities easy and convenient way to browse 
 <pre class="highlight">
 <code>
 <script src="https://cdn.rawgit.com/mickidum/acc_toolbar/master/acctoolbar/acctoolbar.min.js"></script>
-
-// If you want to add links to statement page and problem reporting page use this:
+<!-- optional init -->
 <script>
-	window.onload = function() {
-		window.micAccessTool = new MicAccessTool({
-			link: 'http://your-awesome-website.com/your-accessibility-declaration.pdf',
-			contact: 'mailto:your-mail@your-awesome-website.com'
-		});
-	}
+  window.onload = function() {
+    window.micAccessTool = new MicAccessTool({
+      link: 'http://your-awesome-website.com/your-accessibility-declaration.pdf',
+      contact: 'mailto:your-mail@your-awesome-website.com',
+      buttonPosition: 'right', // default is 'left'
+      forceLang: 'ru-RU' // default is 'en' may be 'he-IL' or 'ru-RU'
+    });
+  }
 </script>
 </code>
 </pre>
@@ -46,6 +47,7 @@ This component allows users with disabilities easy and convenient way to browse 
 <pre class="highlight">
 <code>
 <script src="path/to/script/where/stored/acctoolbar.min.js"></script>
+<!-- optional init -->
 <script>
   window.onload = function() {
     window.micAccessTool = new MicAccessTool({
