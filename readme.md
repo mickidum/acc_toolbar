@@ -9,6 +9,11 @@ Accessibility Toolbar Plugin is simple accessibility component without dependenc
 This component allows users with disabilities easy and convenient way to browse most websites.
 </p>
 
+<h2>Language Support</h2>
+<p>
+	Accessibility Toolbar Plugin may work with as many languages as you need. For now it support out of the box english by default, hebrew and russian. Plugin tries to detect current language in page by schema like "ru-RU", "he-IL" (Wordpress like CMS locales). If your website uses these locale schemas you need do nothing, otherwise you probably can force locale by adding property "forcelang" to additinal init (see below). You always can edit app/js/language.json file for adding or change language strings(see "For Developers" section below).
+</p>
+
 <h2>How to use Accessibility Toolbar <a href="http://webworks.ga/acc_toolbar">(acc toolbox)</a></h2>
 
 <h4>CDN</h4>
@@ -18,6 +23,16 @@ This component allows users with disabilities easy and convenient way to browse 
 <pre class="highlight">
 <code>
 &lt;script src="https://cdn.rawgit.com/mickidum/acc_toolbar/master/acctoolbar/acctoolbar.min.js"&gt;&lt;/script&gt;
+
+// If you want to add links to statement page and problem reporting page use this:
+<script>
+	window.onload = function() {
+		window.micAccessTool = new MicAccessTool({
+			link: 'http://your-awesome-website.com/your-accessibility-declaration.pdf',
+			contact: 'mailto:your-mail@your-awesome-website.com'
+		});
+	}
+</script>
 </code>
 </pre>
 
@@ -32,6 +47,14 @@ This component allows users with disabilities easy and convenient way to browse 
 			<div class="highlight">
 				<pre class="highlight">
 					<code>
+						<script>
+							window.onload = function() {
+								window.micAccessTool = new MicAccessTool({
+									link: 'http://your-awesome-website.com/your-accessibility-declaration.pdf',
+									contact: 'mailto:your-mail@your-awesome-website.com'
+								});
+							}
+						</script>
 &lt;script src="path/to/script/where/stored/acctoolbar.min.js"&gt;&lt;/script&gt;
 
 // optional init
@@ -41,10 +64,11 @@ This component allows users with disabilities easy and convenient way to browse 
       link: '[link to your accesibility statement page]',
       contact: '[link to your contact page or "mailto" link]',
       buttonPosition: '[default is "left"] may be "right"',
-      forceLang: '[default english] may be he-IL'
+      forceLang: '[default english] may be he-IL or ru-RU'
     });
   };
 &lt;/script&gt;
+
 		</code>
 				</pre>
 			</div>
