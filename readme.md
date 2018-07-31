@@ -46,30 +46,19 @@ This component allows users with disabilities easy and convenient way to browse 
 		<div class="language-js highlighter-rouge">
 			<div class="highlight">
 				<pre class="highlight">
+					<script src="path/to/script/where/stored/acctoolbar.min.js"></script>
 					<code>
 						<script>
 							window.onload = function() {
 								window.micAccessTool = new MicAccessTool({
 									link: 'http://your-awesome-website.com/your-accessibility-declaration.pdf',
-									contact: 'mailto:your-mail@your-awesome-website.com'
+									contact: 'mailto:your-mail@your-awesome-website.com',
+									buttonPosition: 'right', // default is 'left'
+      						forceLang: 'ru-RU' // default is 'en' may be 'he-IL' or 'ru-RU'
 								});
 							}
 						</script>
-&lt;script src="path/to/script/where/stored/acctoolbar.min.js"&gt;&lt;/script&gt;
-
-// optional init
-&lt;script&gt;
-  window.onload = function() {	
-    window.micAccessTool = new MicAccessTool({
-      link: '[link to your accesibility statement page]',
-      contact: '[link to your contact page or "mailto" link]',
-      buttonPosition: '[default is "left"] may be "right"',
-      forceLang: '[default english] may be he-IL or ru-RU'
-    });
-  };
-&lt;/script&gt;
-
-		</code>
+					</code>
 				</pre>
 			</div>
 		</div>
