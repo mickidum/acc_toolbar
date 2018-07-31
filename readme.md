@@ -23,8 +23,8 @@ This component allows users with disabilities easy and convenient way to browse 
 <pre class="highlight">
 <code>
 <script src="https://cdn.rawgit.com/mickidum/acc_toolbar/master/acctoolbar/acctoolbar.min.js"></script>
-// optional init
 <script>
+// optional init
   window.onload = function() {
     window.micAccessTool = new MicAccessTool({
       link: 'http://your-awesome-website.com/your-accessibility-declaration.pdf',
