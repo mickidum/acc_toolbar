@@ -22,6 +22,7 @@ This component allows users with disabilities easy and convenient way to browse 
 
 <pre class="highlight">
 <code>
+```html
 <script src="https://cdn.rawgit.com/mickidum/acc_toolbar/18cf6814/acctoolbar/acctoolbar.min.js"></script>
 <script>
 // optional init
