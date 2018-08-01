@@ -22,9 +22,8 @@ This component allows users with disabilities easy and convenient way to browse 
 
 <pre class="highlight">
 <code>
-```html
-<script src="https://cdn.rawgit.com/mickidum/acc_toolbar/18cf6814/acctoolbar/acctoolbar.min.js"></script>
-<script>
+&lt;script src=&quot;https://cdn.rawgit.com/mickidum/acc_toolbar/18cf6814/acctoolbar/acctoolbar.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
 // optional init
   window.onload = function() {
     window.micAccessTool = new MicAccessTool({
@@ -34,7 +33,7 @@ This component allows users with disabilities easy and convenient way to browse 
       forceLang: 'ru-RU' // default is 'en' may be 'he-IL' or 'ru-RU'
     });
   }
-</script>
+&lt;/script&gt;
 </code>
 </pre>
 
@@ -47,9 +46,9 @@ This component allows users with disabilities easy and convenient way to browse 
 		<p>Add script to website</p>
 <pre class="highlight">
 <code>
-<script src="path/to/script/where/stored/acctoolbar.min.js"></script>
+&lt;script src=&quot;path/to/script/where/stored/acctoolbar.min.js&quot;&gt;&lt;/script&gt;
 // optional init
-<script>
+&lt;script&gt;
   window.onload = function() {
     window.micAccessTool = new MicAccessTool({
       link: 'http://your-awesome-website.com/your-accessibility-declaration.pdf',
@@ -58,7 +57,7 @@ This component allows users with disabilities easy and convenient way to browse 
       forceLang: 'ru-RU' // default is 'en' may be 'he-IL' or 'ru-RU'
     });
   }
-</script>
+&lt;/script&gt;
 </code>
 </pre>
 	</li>
