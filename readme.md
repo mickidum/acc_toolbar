@@ -21,7 +21,7 @@ Accessibility Toolbar Plugin is a simple accessibility component without depende
 
 <pre class="highlight">
 <code>
-&lt;script src=&quot;https://cdn.rawgit.com/mickidum/acc_toolbar/18cf6814/acctoolbar/acctoolbar.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdn.rawgit.com/mickidum/acc_toolbar/fdffe84a/acctoolbar/acctoolbar.min.js&quot;&gt;&lt;/script&gt;
 &lt;script&gt;
 // optional init
   window.onload = function() {
