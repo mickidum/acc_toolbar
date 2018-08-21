@@ -404,7 +404,7 @@ body.mic-toolbox-disable-buttons-animations * {
 
 // KEYBOARD SERFING
 body.mic-toolbox-disable-buttons-keyboard > :not(#mic-init-access-tool) {
-	a, button, h1, h2, h3, h4, h5, h6, p, input, li {
+	a, button, h1, h2, h3, h4, h5, h6, p, input, li, select, textarea {
 		&:focus {
 			outline: black solid thick !important;
 			background: yellow !important;

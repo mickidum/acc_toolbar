@@ -190,7 +190,7 @@ MicAccessTool.prototype.onceButtonChange = function(event) {
 
 MicAccessTool.prototype.keyboardRootEnable = function() {
 	if (window.MICTOOLBOXAPPSTATE.keyboardRoot) {
-		var headers = document.querySelectorAll('h1,h2,h3,h4,h5,h6,p,a,button,input');
+		var headers = document.querySelectorAll('h1,h2,h3,h4,h5,h6,p,a,button,input,select,textarea');
 		for (var i = 0; i < headers.length; i++) {
 			var item = headers[i];
 			item.tabIndex = i + 1
