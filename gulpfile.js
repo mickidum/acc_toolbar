@@ -1,30 +1,29 @@
 var gulp           = require('gulp'),
 		gutil          = require('gulp-util' ),
-		sass           = require('gulp-sass'),
+		gulpSass           = require('gulp-sass'),
 		browserSync    = require('browser-sync'),
 		concat         = require('gulp-concat'),
 		uglify         = require('gulp-uglify'),
 		cleanCSS       = require('gulp-clean-css'),
 		rename         = require('gulp-rename'),
-		del            = require('del'),
 		cache          = require('gulp-cache'),
 		autoprefixer   = require('gulp-autoprefixer'),
 		notify         = require("gulp-notify"),
 		fileinclude 	 = require('gulp-file-include'),
-		htmlmin 	 		 = require('gulp-htmlmin');
+		htmlmin 	 		 = require('gulp-htmlmin'),
+		rimraf         = require("rimraf");
 
+function minifyHtml(cb) {
+  gulp.src('app/htmlparts/**/*.html')
+  .pipe(htmlmin({collapseWhitespace: true}))
+  .pipe(gulp.dest('app/htmlmin'))
+  setTimeout(() => cb(), 100);
+}
 
-gulp.task('minify-html', function() {
-  return gulp.src('app/htmlparts/**/*.html')
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest('app/htmlmin'))
-    .pipe(browserSync.reload({stream: true}));
-});
-
-gulp.task('common-js', function() {
-	return gulp.src([
-		'app/js/**/*.js',
-		])
+function commonJs(cb) {
+	gulp.src([
+	'app/js/**/*.js',
+	])
 	.pipe(fileinclude({
       prefix: '@@',
       basepath: '@file'
@@ -32,77 +31,81 @@ gulp.task('common-js', function() {
 	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(uglify())
 	.pipe(gulp.dest('app/minjs'))
-	.pipe(browserSync.reload({stream: true}));
-});
+	.pipe(browserSync.stream());
+	cb();
+}
 
-
-gulp.task('browser-sync', function() {
+function browser(cb) {
 	browserSync({
 		server: {
 			baseDir: 'app'
 		},
+		open: false,
 		notify: false,
-		// tunnel: true,
-		// tunnel: "projectmane", //Demonstration page: http://projectmane.localtunnel.me
 	});
-});
+	cb();
+}
 
-gulp.task('sass', function() {
-	return gulp.src('app/scss/**/*.scss')
-	.pipe(sass({
+function code(cb) {
+	gulp.src('app/*.html')
+	.pipe(browserSync.stream());
+	cb();
+}
+
+function sass(cb) {
+	gulp.src('app/scss/**/*.scss')
+	.pipe(gulpSass({
 		outputStyle: 'expand'}).on("error", notify.onError()))
 	.pipe(rename({suffix: '.min', prefix : ''}))
-	.pipe(autoprefixer(['last 15 versions']))
-	.pipe(cleanCSS())
+	.pipe(autoprefixer(['last 2 versions']))
+	.pipe(cleanCSS()) // comment on debug
 	.pipe(gulp.dest('app/css'))
-	.pipe(browserSync.reload({stream: true}));
-});
+	setTimeout(() => cb(), 100);
+	
+}
 
-gulp.task('watch', ['sass', 'browser-sync', 'common-js', 'minify-html'], function() {
-	gulp.watch('app/scss/**/*.scss', ['sass', 'common-js']);
-	gulp.watch(['app/js/**/*.js'], ['common-js']);
-	gulp.watch(['app/htmlparts/**/*.html'], ['minify-html', 'common-js']);
-	gulp.watch('app/*.html', browserSync.reload);
-});
-
-gulp.task('build', ['removedist', 'sass', 'minify-html', 'common-js'], function() {
-
-	var buildFiles = gulp.src([
+function files(cb) {
+	setTimeout(() => {
+		gulp.src([
 		'app/minjs/common.min.js'
 		])
-	.pipe(rename('acctoolbar.min.js'))
-	.pipe(gulp.dest('acctoolbar'));
+		.pipe(rename('acctoolbar.min.js'))
+		.pipe(gulp.dest('acctoolbar'));
+		gulp.src([
+			'app/cursors/**/*',
+			]).pipe(gulp.dest('acctoolbar/cursors'));
+		cb();
+	}, 500);
+}
 
-	var buildCursors = gulp.src([
-		'app/cursors/**/*',
-		]).pipe(gulp.dest('acctoolbar/cursors'));
+function remDist(cb) {
+	rimraf('acctoolbar', cb);
+}
 
-	// var buildCss = gulp.src([
-	// 	'app/css/app.min.css',
-	// 	]).pipe(gulp.dest('dist/css'));
+function clearCache (cb) { 
+	cache.clearAll();
+	cb(); 
+}
 
-	// var buildJs = gulp.src([
-	// 	'app/js/scripts.min.js',
-	// 	'app/js/common.min.js',
-	// 	]).pipe(gulp.dest('dist/js'));
+function watch(cb) {
+	gulp.watch('app/scss/**/*.scss', gulp.series(sass, commonJs));
+	gulp.watch('app/htmlparts/**/*.html', gulp.series(minifyHtml, commonJs));
+	gulp.watch('app/js/**/*.js', gulp.parallel(commonJs));
+	gulp.watch('app/*.html', gulp.parallel(code));
+	cb();
+}
 
-	// var buildFonts = gulp.src([
-	// 	'app/fonts/**/*',
-	// 	]).pipe(gulp.dest('dist/fonts'));
+// exports.build = gulp.series(remDist, minifyHtml, sass, commonJs, files);
+exports.build = gulp.series(remDist, minifyHtml, sass, commonJs, files);
 
-	// var buildApi = gulp.src([
-	// 	'app/api/**/*',
-	// 	]).pipe(gulp.dest('dist/api'));
+exports.clearcache = gulp.parallel(clearCache);
 
+exports.rem = gulp.parallel(remDist);
+exports.buildhtml = gulp.parallel(minifyHtml);
+exports.buildcss = gulp.parallel(sass);
+exports.buildjs = gulp.parallel(commonJs);
+exports.buildfiles = gulp.parallel(files);
 
-});
+exports.default = gulp.parallel(watch, browser);
+// exports.build = gulp.parallel(buildall);
 
-
-
-gulp.task('removedist', function() { return del.sync('acctoolbar'); });
-gulp.task('clearcache', function () { return cache.clearAll(); });
-
-
-gulp.task('clearcache', function () { return cache.clearAll(); });
-
-gulp.task('default', ['watch']);
