@@ -320,7 +320,7 @@ MicAccessTool.prototype.imagesAddTitles = function() {
 		else {
 			var title = document.createElement('span');
 			title.className = 'mic-toolbox-images-titles';
-			title.textContent = this.locale.image_without_alt || 'image without text';
+			title.textContent = 'image without text';
 			img.parentNode.insertBefore(title, img);
 		}
 	}
