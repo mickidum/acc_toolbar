@@ -7,6 +7,7 @@
     "access_declaration": "הצהרת נגישות",
     "debug_contacts": "דווח על בעיית נגישות",
     "reset_all_settings": "בטל נגישות",
+    "image_without_alt": "תמונה ללא תיאור",
     "contrast_block": {
       "header": "ניגודיות צבעים",
       "btn_monochrome": "תצוגת<br>מונוכרום",
@@ -40,6 +41,7 @@
     "access_declaration": "Декларация доступности",
     "debug_contacts": "Сообщить о проблеме",
     "reset_all_settings": "Сбросить настройки",
+    "image_without_alt": "изображение без текста",
     "contrast_block": {
       "header": "Цветовой контраст",
       "btn_monochrome": "монохр. дисплей",
@@ -73,6 +75,7 @@
     "access_declaration": "accessibility statement",
     "debug_contacts": "report an accessibility problem",
     "reset_all_settings": "reset settings",
+    "image_without_alt": "image without text",
     "contrast_block": {
       "header": "color contrast",
       "btn_monochrome": "uncolored<br>display",
