@@ -406,11 +406,13 @@ body.mic-toolbox-disable-buttons-animations * {
 body.mic-toolbox-disable-buttons-keyboard > :not(#mic-init-access-tool) {
 	a, button, h1, h2, h3, h4, h5, h6, p, input, li, select, textarea {
 		&:focus {
-			outline: black solid thick !important;
+			// outline: black solid thick !important;
+			outline: none !important;
 			background: yellow !important;
 			color: #000 !important;
-			box-shadow: 0 0 10px 5px #333 !important;
-			padding: 10px 20px !important;
+			// box-shadow: 0 0 10px 5px #333 !important;
+			box-shadow: none !important;
+			// padding: 10px !important;
 			text-shadow: none !important;
 		}
 	}
@@ -460,13 +462,15 @@ body.mic-toolbox-content-images {
 		max-width: 180px !important;
 		line-height: 1 !important;
 		margin: 0 auto !important;
-		font-weight: bold !important;
+		font-weight: normal !important;
 		text-align: center !important;
 		background: #ffffe0 !important;
 		color: black !important;
-		box-shadow: 0 0 20px 2px #333 !important;
+		// box-shadow: 0 0 20px 2px #333 !important;
+		box-shadow: none !important;
 		padding: 10px !important;
-		border: solid 2px darkred !important;
-		border-radius: 50px !important;
+		border: solid 1px darkred !important;
+		// border-radius: 50px !important;
+		border-radius: 0 !important;
 	}
 }
