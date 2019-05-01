@@ -205,12 +205,12 @@ MicAccessTool.prototype.keyboardRootEnable = function() {
 MicAccessTool.prototype.fontsChange = function(event) {
 	event.preventDefault();
 
-	var mainBody = Number(document.body.style.fontSize.split('px')[0]);
+	// var mainBody = Number(document.body.style.fontSize.split('px')[0]);
 	
 	var counter = window.MICTOOLBOXAPPSTATE.fontSize;
 
 	if (this.id === 'mic-toolbox-fonts-up') {
-			if (mainBody >= 26 || counter >= 1.6) {return}
+			if (counter >= 1.6) {return}
 			var items = document.querySelectorAll('body,h1,h2,h3,h4,h5,h6,p,a,button,input,textarea,li,td,th,strong,span,blockquote,div');
 			for (var i = 0; i < items.length; i++) {
 			var item = items[i];
@@ -221,7 +221,7 @@ MicAccessTool.prototype.fontsChange = function(event) {
 		counter = (counter * 1.1).toFixed(2);
 	}
 	if (this.id === 'mic-toolbox-fonts-down') {
-			if (mainBody <= 16) {
+			if (counter <= 1) {
 				window.MICTOOLBOXAPPSTATE.fontSize = 1;
 				MicAccessTool.prototype.updateState();
 				return;
