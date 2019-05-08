@@ -40,6 +40,7 @@ span.mic-toolbox-images-titles {
 	text-decoration: none !important;
 	user-select: none !important;
 	line-height: 1 !important;
+	transition: none !important;
 	// font-variant: small-caps !important;
 	// text-transform: uppercase;
 }
@@ -107,7 +108,7 @@ span.mic-toolbox-images-titles {
 		z-index: 9999999;
 		visibility: hidden;
 		opacity: 0;
-		transition: opacity .4s;
+		transition: opacity .4s !important;
 		> div:not(.mic-access-tool-box-header):not(.mic-toolbox-all-credits) {
 			position: relative;
 			background-color: #fff;
