@@ -29,7 +29,7 @@ function commonJs(cb) {
       basepath: '@file'
    }))
 	.pipe(rename({suffix: '.min', prefix : ''}))
-	.pipe(uglify())
+	//.pipe(uglify())
 	.pipe(gulp.dest('app/minjs'))
 	.pipe(browserSync.stream());
 	cb();
@@ -61,7 +61,7 @@ function sass(cb) {
 	.pipe(cleanCSS()) // comment on debug
 	.pipe(gulp.dest('app/css'))
 	setTimeout(() => cb(), 100);
-	
+
 }
 
 function files(cb) {
@@ -70,10 +70,11 @@ function files(cb) {
 		'app/minjs/common.min.js'
 		])
 		.pipe(rename('acctoolbar.min.js'))
-		.pipe(gulp.dest('acctoolbar'));
+		.pipe(gulp.dest('app/acctoolbar'));
 		gulp.src([
 			'app/cursors/**/*',
-			]).pipe(gulp.dest('acctoolbar/cursors'));
+			]).pipe(gulp.dest('app/acctoolbar/cursors'));
+
 		cb();
 	}, 500);
 }
@@ -82,9 +83,9 @@ function remDist(cb) {
 	rimraf('acctoolbar', cb);
 }
 
-function clearCache (cb) { 
+function clearCache (cb) {
 	cache.clearAll();
-	cb(); 
+	cb();
 }
 
 function watch(cb) {

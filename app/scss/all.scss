@@ -1,5 +1,4 @@
 #mic-init-access-tool {
-// RESET
 button {
 	border: none;
   outline: none;
@@ -221,7 +220,7 @@ span.mic-toolbox-images-titles {
 					background-color: #fffff3;
 					span {
 						color: darkred !important;
-						font-weight: bold; 
+						font-weight: bold;
 					}
 					&::before {
 						content: "\\2713";
@@ -281,7 +280,7 @@ span.mic-toolbox-images-titles {
 					}
 				}
 			}
-			
+
 			button {
 				cursor: pointer;
 				display: inline-block;
@@ -314,7 +313,7 @@ span.mic-toolbox-images-titles {
 					border: dashed 1px darkred;
 					background-color: #fffff3;
 					span {
-						color: darkred !important; 
+						color: darkred !important;
 					}
 					&::before {
 						content: "\\2713";
@@ -386,8 +385,8 @@ body.mic-toolbox-contrast-monochrome {
 }
 
 // CONTRAST WHITE
-body.mic-toolbox-contrast-soft, 
-body.mic-toolbox-contrast-soft > :not(#mic-init-access-tool), 
+body.mic-toolbox-contrast-soft,
+body.mic-toolbox-contrast-soft > :not(#mic-init-access-tool),
 body.mic-toolbox-contrast-soft > :not(#mic-init-access-tool) *:not(img), {
 	color: Black !important;
   background: transparent !important;
@@ -404,7 +403,7 @@ body.mic-toolbox-contrast-hard > :not(#mic-init-access-tool) {
 body.mic-toolbox-disable-buttons-animations * {
 	transition-property: none !important;
 	animation: none !important;
-	animation-name: none !important;	
+	animation-name: none !important;
 }
 
 // KEYBOARD SERFING

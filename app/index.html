@@ -11,20 +11,15 @@
 	<!-- <script src="minjs/common.min.js"></script> -->
 
 	<!-- Production script -->
-	<script src="../acctoolbar/acctoolbar.min.js"></script> 
+	<script src="acctoolbar/acctoolbar.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 	<!-- CDN -->
-	<!-- <script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script> -->
-<style>
-	body {
-		background-color: #ddd;
-		font-size: 40px;
-		transition: all 1s;
-	}
-	a {
-		transition: all 1s;
-	}
-</style>
+	<!--<script src="https://cdn.jsdelivr.net/gh/mickidum/acc_toolbar/acctoolbar/acctoolbar.min.js"></script>-->
 </head>
 
 <body>
@@ -33,6 +28,7 @@
 <h1>H1 ndsadsda</h1>
 <h2>H2 sdfskafksdjf</h2>
 <p>
+	lala
 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -42,13 +38,13 @@
 </p>
 
 <script>
-	window.onload = function() {	
-  window.micAccessTool = new MicAccessTool({
-  	forceLang: "ru-RU",
-  	link: 'https://acctoolbar.ml',
-    contact: 'mailto:mickidum@gmail.com'
+$('document').ready(function() {
+	window.micAccessTool = new MicAccessTool({
+  	forceLang: "sl",
+  	//link: 'https://www.dvk-rs.si',
+    //contact: 'mailto:mickidum@gmail.com'
   });
-};
+});
 
 </script>
 </body>
