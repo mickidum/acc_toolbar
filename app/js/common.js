@@ -95,7 +95,7 @@ MicAccessTool.prototype.buildToolBox = function() {
 
 	var obj = this.currentLanguage || this.locale.en;
 	var htmlToolBox = '@@include("../htmlmin/toolbox.html")';
-	var allCss = '@@include("../css/all.min.css")';
+	var allCss = '@@include("../css/main.min.css")';
 
 	var styleTag = document.createElement('style');
 	styleTag.textContent = allCss;

@@ -60,7 +60,7 @@ function sass(cb) {
 	.pipe(autoprefixer(['last 2 versions']))
 	.pipe(cleanCSS()) // comment on debug
 	.pipe(gulp.dest('app/css'))
-	setTimeout(() => cb(), 100);
+	setTimeout(() => cb(), 500);
 
 }
 
@@ -93,6 +93,7 @@ function watch(cb) {
 	gulp.watch('app/htmlparts/**/*.html', gulp.series(minifyHtml, commonJs));
 	gulp.watch('app/js/**/*.js', gulp.parallel(commonJs));
 	gulp.watch('app/*.html', gulp.parallel(code));
+
 	cb();
 }
 

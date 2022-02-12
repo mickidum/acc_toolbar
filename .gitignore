@@ -11,3 +11,4 @@ app/css/all.min.css
 app/index.html
 app/js/languageplus.json
 app/acctoolbar
+.DS_Store
