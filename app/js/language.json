@@ -80,7 +80,7 @@
       "header": "color contrast",
       "btn_monochrome": "uncolored<br>display",
       "btn_bright": "bright<br>contrast",
-      "btn_invert": "reverse<br>contrast"
+      "btn_invert": "invert<br>colors"
     },
     "text_block": {
       "header": "text size",
@@ -99,6 +99,40 @@
       "btn_cursor_white": "big white<br>cursor",
       "btn_cursor_black": "big black<br>cursor",
       "btn_zoom_in": "zoom<br>screen"
+    }
+  },
+  "fr": {
+    "btn_open": "menu d'accessibilité",
+    "btn_close": "fermer",
+    "keyboard_root": "navigation au clavier",
+    "disable_animattions": "désactiver les animations",
+    "access_declaration": "déclaration d'accessibilité",
+    "debug_contacts": "signaler un problème d'accessibilité",
+    "reset_all_settings": "réinitialiser les paramètres",
+    "image_without_alt": "image sans texte",
+    "contrast_block": {
+      "header": "contraste des couleurs",
+      "btn_monochrome": "affichage<br>sans couleur",
+      "btn_bright": "contraste<br>lumineux",
+      "btn_invert": "couleurs<br>inversées"
+    },
+    "text_block": {
+      "header": "taille de police",
+      "btn_font_up": "augmenter<br>la taille",
+      "btn_font_down": "diminuer<br>la taille",
+      "btn_font_readable": "texte<br>lisible"
+    },
+    "content_block": {
+      "header": "mettre en évidence le contenu",
+      "btn_underline_links": "souligner<br>les liens",
+      "btn_underline_headers": "souligner<br>les en-têtes",
+      "btn_images_titles": "titres<br>d'images"
+    },
+    "zoom_block": {
+      "header": "zoomer",
+      "btn_cursor_white": "gros curseur<br>blanc",
+      "btn_cursor_black": "gros curseur<br>noir",
+      "btn_zoom_in": "élargir<br>l'écran"
     }
   }
 }
