@@ -101,7 +101,7 @@
       "btn_zoom_in": "zoom<br>screen"
     }
   },
-  "fr": {
+  "fr_FR": {
     "btn_open": "menu d'accessibilité",
     "btn_close": "fermer",
     "keyboard_root": "navigation au clavier",
