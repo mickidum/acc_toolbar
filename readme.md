@@ -10,7 +10,7 @@ Accessibility Toolbar Plugin is a simple accessibility component without depende
 
 <h2>Language Support</h2>
 <p>
-	Accessibility Toolbar Plugin may work with as many languages as you need. For now, it supports out of the box English by default, Hebrew, and Russian. The plugin tries to detect current language in page by schema like "ru-RU", "he-IL" (Wordpress like CMS locales). If your website uses these locale schemas you need do nothing, otherwise, you probably can force locale by adding property "forcelang" to additional init (see below). You always can edit app/js/language.json file for adding or change language strings(see "For Developers" section below).
+	Accessibility Toolbar Plugin may work with as many languages as you need. For now, it supports out of the box English by default, Hebrew, Russian, and English. The plugin tries to detect current language in page by schema like "ru-RU", "he-IL" (Wordpress like CMS locales). If your website uses these locale schemas you need do nothing, otherwise, you probably can force locale by adding property "forcelang" to additional init (see below). You always can edit app/js/language.json file for adding or change language strings(see "For Developers" section below).
 </p>
 
 <h2>How to use Accessibility Toolbar <a href="https://mickidum.github.io/acc_toolbar/">(acc toolbox)</a></h2>
