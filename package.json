@@ -20,7 +20,7 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.5",
-    "gulp": "^4.0.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-cache": "^1.1.1",
     "gulp-clean-css": "^4.2.0",
@@ -34,9 +34,11 @@
     "gulp-util": "^3.0.8",
     "rimraf": "^2.6.3"
   },
+  "engines": {
+    "node": "14.x.x"
+  },
   "bugs": {
     "url": "https://github.com/mickidum/acc_toolbar/issues"
   },
-  "homepage": "https://github.com/mickidum/acc_toolbar#readme",
-  "dependencies": {}
+  "homepage": "https://github.com/mickidum/acc_toolbar#readme"
 }

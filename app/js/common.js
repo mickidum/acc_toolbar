@@ -9,7 +9,7 @@ function MicAccessTool(init) {
   	forceLang: '',
 	};
 
-	this.locale = @@include("language.json");
+	this.locale = include("language.json");
 	this.currentLanguage = this.locale[this.init.forceLang] || this.locale.en;
 	
 	this.checkLanguageBox();
