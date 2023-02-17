@@ -134,5 +134,39 @@
       "btn_cursor_black": "gros curseur<br>noir",
       "btn_zoom_in": "élargir<br>l'écran"
     }
+  },
+  "es-ES": {
+    "btn_open": "menú de accesibilidad",
+    "btn_close": "Cerrar",
+    "keyboard_root": "Navegación por teclado",
+    "disable_animattions": "Animaciones de bloque",
+    "access_declaration": "declaración de accesibilidad",
+    "debug_contacts": "reportar un problema de accesibilidad",
+    "reset_all_settings": "Reiniciar ajustes",
+    "image_without_alt": "imagen sin texto",
+    "contrast_block": {
+      "header": "contraste de color",
+      "btn_monochrome": "sin color<br>pantalla",
+      "btn_bright": "brillante<br>contraste",
+      "btn_invert": "invertir<br>colores"
+    },
+    "text_block": {
+      "header": "tamaño del texto",
+      "btn_font_up": "aumentar<br>texto",
+      "btn_font_down": "disminuir<br>texto",
+      "btn_font_readable": "texto legible<br>"
+    },
+    "content_block": {
+      "header": "resaltando contenido",
+      "btn_underline_links": "subrayar<br>enlaces",
+      "btn_underline_headers": "subrayar<br>encabezados",
+      "btn_images_titles": "imágenes<br>títulos"
+    },
+    "zoom_block": {
+      "header": "acercarse",
+      "btn_cursor_white": "gran cursor<br>blanco",
+      "btn_cursor_black": "gran cursor<br>negro",
+      "btn_zoom_in": "zoom<br>pantalla"
+    }
   }
 }
