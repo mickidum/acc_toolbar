@@ -1,5 +1,6 @@
 {
   "he-IL": {
+    "learn_more":"ללמוד עוד על",
     "btn_open": "תפריט נגישות",
     "btn_close": "סגור",
     "keyboard_root": "ניווט מקלדת",
@@ -34,6 +35,7 @@
     }
   },
   "ru-RU": {
+    "learn_more":"узнать больше о",
     "btn_open": "Меню доступности",
     "btn_close": "Закрыть",
     "keyboard_root": "Навигация с клавиатуры",
@@ -68,6 +70,7 @@
     }
   },
   "en": {
+    "learn_more":"learn more about",
     "btn_open": "accessibility menu",
     "btn_close": "close",
     "keyboard_root": "keyboard navigation",
@@ -102,6 +105,7 @@
     }
   },
   "fr_FR": {
+    "learn_more":"en savoir plus sur",
     "btn_open": "menu d'accessibilité",
     "btn_close": "fermer",
     "keyboard_root": "navigation au clavier",
